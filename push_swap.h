@@ -1,20 +1,8 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: falakus <falakus@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/26 18:16:59 by falakus           #+#    #+#             */
-/*   Updated: 2025/02/26 18:16:59 by falakus          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#define PUSH_SWAP_H
 
-# include <stdlib.h>
-# include <unistd.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 typedef struct s_list
 {
@@ -29,7 +17,7 @@ void	sort_4(t_list **a, t_list **b);
 void	sort_3(t_list **a);
 int		is_num(char *num);
 int		is_exist(int num, char **av, int i);
-long	ft_atoi(const char *str);
+int		ft_atoi(const char *str);
 int		ft_isdigit(int c);
 char	**ft_control(int ac, char **av);
 void	control_detail(char **av, int ac);
@@ -67,6 +55,4 @@ void	sa(t_list	**a);
 void	swap(t_list **stack);
 size_t	ft_strlen(const char *str);
 void	print_error(char **str);
-void	free_str(char **str);
-void	ft_exit(char **str, int ac);
 #endif
